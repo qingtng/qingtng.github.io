@@ -1,0 +1,523 @@
+@import url(normalize.css);
+
+/* Font: Inclusive Sans
+https://github.com/LivKing/Inclusive-Sans
+*/
+
+@import url(webfonts/font.css);
+
+/* Main */
+
+html, body { background: #F7F8FF; }
+
+html { height: 100%; scroll-behavior: smooth; }
+
+body {
+  color: #002F39;
+  font-family: "Inclusive Sans", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: #A68E16;
+  border-bottom: 1px solid #636dbc;
+  transition: 0.1s;
+}
+
+a.expand_collapse {
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #636dbcce;
+  color: white;
+}
+
+ul#main_menu_page {
+  background-color: rgba(255, 255, 255, 0.967);
+  padding: 0rem 2rem;
+  list-style-type: none;
+}
+
+#page_content {
+  background-color: rgba(255, 255, 255, 0.967);
+  padding: 2rem 2rem;
+}
+
+.navtop {
+  padding-top: 1rem;
+  border-top: 1px dashed #ddd;
+}
+
+.nav_nested {
+  padding-bottom: 0.5rem;
+}
+
+.navtop:first-of-type {
+  padding-top: 1rem;
+  border-top: none;
+}
+
+ul#main_menu_page:first-of-type {
+  padding-top: 0.5rem;
+}
+
+
+ul#main_menu_page:last-child {
+  padding-bottom: 1.5rem;
+}
+
+/* 636dbc */
+
+.post-meta { text-align: right; }
+
+abbr:hover {
+  cursor: help;
+}
+
+h1 {
+  font-size: 30px;
+  border-bottom: 1px solid #002F39;
+}
+
+h2, h3, h4, h5, h6 { margin-top: 1rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1.3rem 0; }
+
+li { 
+  margin: 0.4rem 0; 
+}
+
+*:target { background: yellow; }
+
+.w {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+hr {
+  border: 1px dashed #ddd;
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  color: white;
+  background: #636dbc;
+}
+
+div.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid black;
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* open call layout */ 
+
+div.opencall {
+  margin-top: 70px;
+  border-top: 1px solid #999;
+  padding-bottom: 0;
+}
+
+.opencall h2 {
+  font-size: 24px;
+}
+
+.deadline {
+  display:flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.deadline span {
+  display: block;
+  border-bottom: 1px solid #999;
+  margin-bottom: 5px;
+}
+
+.deadline li {
+  display: block;
+  min-width: 30%;
+  margin-right: 20px;
+  background-color: #ffef9e9a;
+  padding: 10px;
+}
+
+.deadline li.d2 a {
+  font-size: 18px;
+}
+
+/* reducing the font size for mobile - accordion title */
+
+/* or nvm, not yet
+
+@media (max-width: 600px) {
+
+  .accordion details {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+}
+
+*/
+
+.accordion details {
+  display: block;
+  padding-right:15px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.967);
+}
+
+
+
+/* ::marker {
+  border: 1px solid red;
+  display: block;
+  position: relative;
+  top: 20px;
+} */
+
+.accordion #accordion_header {
+  padding: 3px;
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #999;
+  font-weight: bold;
+}
+
+#accordion_header span.ext_link {
+  display: block;
+  width: 70%;
+/*  color:#A68E16; */
+  text-align:left;
+}
+
+#accordion_header span {
+  padding-right: 10px;
+  display: block;
+  height: 100%;
+  width: 25%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.accordion summary {
+  padding: 3px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDJGMzkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tZG93bi1pY29uIGx1Y2lkZS1jaGV2cm9uLWRvd24iPjxwYXRoIGQ9Im02IDkgNiA2IDYtNiIvPjwvc3ZnPg==);
+}
+
+.accordion details[open] summary {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDJGMzkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tdXAtaWNvbiBsdWNpZGUtY2hldnJvbi11cCI+PHBhdGggZD0ibTE4IDE1LTYtNi02IDYiLz48L3N2Zz4=);
+}
+
+
+.accordion summary span {
+  padding-right: 10px;
+  display: block;
+  height: 100%;
+  width: 25%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.accordion summary a.ext_link {
+  display: block;
+  max-width: 70%;
+}
+
+.collapsed_call_div ul {
+  margin-left: 5px;
+  padding-left: 0;
+}
+
+.collapsed_call_div li::before {
+  content: '·';
+  padding-right: 5px;
+}
+
+ul.raw_info_call {
+  list-style-type: none;
+}
+
+ul.call_tags, ul.call_tags li, li.raw_tags {
+  margin: 0;
+  padding: 0;
+}
+
+ul.call_tags li {
+  float: left;
+  padding-right: 10px;
+}
+
+li.raw_url a, ul.call_tags li a {
+  border-bottom: none;
+  color: #636dbc;
+}
+
+ul#othertags {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 0em;
+}
+
+ul#othertags li {
+  display: block;
+  margin: 5px;
+}
+
+span.othertagsp {
+  padding: 0;
+  margin: 0;
+}
+
+#othertags a {
+  color:#636dbc;
+}
+
+#othertags a:hover {
+  color:#fff;
+}
+
+  /* TAG COLOURS !!!! */
+
+  a.tag_academic {
+    color: #DB631C !important;
+    background-color: #db621c14;
+  }
+
+    a.tag_academic:hover {
+      background-color: #DB631C;
+      color: #fff !important;
+    }
+
+  a.tag_cfp {
+    color: #DB1C97 !important;
+    background-color: #db1c9823;
+  }
+
+    a.tag_cfp:hover {
+      background-color: #DB1C97;
+      color: #fff !important;
+    }
+
+  a.tag_journal {
+    color: #1c68db !important;
+    background-color: #1c68db26;
+  }
+
+    a.tag_journal:hover {
+      background-color: #1c68db;
+      color: #fff !important;
+    }
+
+  a.tag_conference {
+    color: #701CDB !important;
+    background-color: #6f1cdb21;
+  }
+
+    a.tag_conference:hover {
+      background-color: #701CDB;
+      color: #fff !important;
+    }
+
+  a.tag_zine {
+    color: #a3920b !important;
+    background-color: #dbc51c1d;
+  }
+
+    a.tag_zine:hover {
+      background-color: #DBC51C;
+      color: #fff !important;
+    }
+
+  a.tag_magazine {
+    color: #a3920b !important;
+    background-color: #dbc51c22;
+  }
+
+    a.tag_magazine:hover {
+      background-color: #DBC51C;
+      color: #fff !important;
+    }
+
+  a.tag_london-based {
+    color: #15aa87 !important;
+    background-color: #1cdbae1a;
+  }
+
+    a.tag_london-based:hover {
+      background-color: #1CDBAF;
+      color: #fff !important;
+    }
+
+a.tag_event {
+    color: #1486A3 !important;
+    background-color: #1486a31b;
+  }
+
+    a.tag_event:hover {
+      background-color: #1486A3;
+      color: #fff !important;
+    }
+
+a.tag_exhibition {
+    color: #9c3560 !important;
+    background-color: #9c356018;
+  }
+
+    a.tag_exhibition:hover {
+      background-color: #9c3560;
+      color: #fff !important;
+    }
+
+a.tag_misc, a.tag_rolling {
+  color:#636dbc !important;
+  background-color: #636dbc10;
+}
+
+a.tag_misc:hover, a.tag_rolling:hover {
+  background-color:#636dbc;
+  color: #fff !important;
+}
+
+  /* END TAG COLOURS */
+
+li.raw_url a:hover, ul.call_tags li a:hover {
+  color: #fff;
+}
+
+ul.raw_info_call li::before {
+  content: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.raw_info_call li span {
+  margin-left: 0;
+  width: 17%;
+  font-weight: bold;
+}
+
+.accordion details .collapsed_call_div {
+  width: 70%;
+  margin-left: 25%;
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+
+#calls_by_deadline_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#calls_by_deadline_list li {
+  display: flex;
+}
+
+#calls_by_deadline_list li span {
+  padding-right: 10px;
+  display: block;
+  height: 100%;
+  width: 25%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#calls_by_deadline_list li a.ext_link {
+  display: block;
+  max-width: 70%;
+}
+
+#calls_by_deadline_list .header_ul {
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+a.ext_link::after {
+  content: '\2197';
+  color: #999;
+  padding-left: 4px;
+  font-size: 15px;
+}
+
+/* !!temporary fix since all the page content/links in summaries are external links, but i need a permanent solution soon!! */
+
+#page_content a::after, .collapsed_call_div a::after {
+  content: '\2197';
+  color: #999;
+  padding-left: 4px;
+  font-size: 15px;
+}
+
+.raw_tags a::after {
+  content: '';
+  padding: 0;
+}
+
+a.ext_link:hover::after {
+  color: #fff;
+}
+
+/* 
+
+.ext_link {
+  display: inline-block;
+  position: relative;
+  color: #999;
+  font-size: 15px;
+}
+
+.deadline li.d1 {
+  width: 25%;
+}
+
+.deadline li.d2 {
+  width: 66%;
+}
+
+.deadline li.d3 {
+  width: 0%;
+} */
