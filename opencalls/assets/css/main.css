@@ -526,12 +526,18 @@ a.ext_link:hover::after {
 
 @media (max-width: 800px) {
 
+  .w {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
   body {
     font-size: 14px;
   }
 
   ul#main_menu_page {
-    padding: 0rem 0.5rem;
+    padding: 0rem 2rem;
   }
 
   #page_content {
