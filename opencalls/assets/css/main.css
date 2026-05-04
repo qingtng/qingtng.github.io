@@ -553,18 +553,17 @@ a.ext_link:hover::after {
   }
 
   .accordion details .collapsed_call_div {
-  width: 70%;
-  margin-left: 25%;
-  padding-left: 20px;
+  width: 90%;
+  padding: 0;
+  margin-left: 5%;
   font-size: 14px;
   line-height: 1.4;
   padding-bottom: 1px;
   }
 
-
-
   a.ext_link::after, #page_content a::after, .collapsed_call_div a::after {
   font-size: 10px;
+  padding-left: 2px;
   }
 
   .accordion summary {
