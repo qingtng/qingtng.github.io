@@ -464,7 +464,7 @@ ul.raw_info_call li span {
   margin-right: 10px;
 }
 
-#calls_by_deadline_list li a.ext_link {
+#calls_by_deadline_list li.raw_url a.ext_link {
   display: block;
   max-width: 70%;
 }
@@ -541,7 +541,7 @@ a.ext_link:hover::after {
   }
 
   #page_content {
-    padding: 0.5rem 0.5rem;
+    padding: 1rem;
   }
 
   h1 {
@@ -552,10 +552,15 @@ a.ext_link:hover::after {
     font-size: 18px;
   }
 
+  #calls_by_deadline_list li span {
+    margin-right: 0px;
+    width: 20%;
+  }
+
   .accordion details .collapsed_call_div {
   width: 90%;
-  padding: 0;
-  margin-left: 5%;
+  padding: 5%;
+  margin-left: 0;
   font-size: 14px;
   line-height: 1.4;
   padding-bottom: 1px;
@@ -568,7 +573,11 @@ a.ext_link:hover::after {
 
   .accordion summary {
     background-size: 14px;
+  }
 
+  .accordion summary span {
+    margin-left: 10px;
+    width: 20%;
   }
 
 }
