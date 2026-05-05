@@ -501,27 +501,6 @@ a.ext_link:hover::after {
   color: #fff;
 }
 
-/* 
-
-.ext_link {
-  display: inline-block;
-  position: relative;
-  color: #999;
-  font-size: 15px;
-}
-
-.deadline li.d1 {
-  width: 25%;
-}
-
-.deadline li.d2 {
-  width: 66%;
-}
-
-.deadline li.d3 {
-  width: 0%;
-} */
-
 /* fixing the sizes of everything on mobile */
 
 @media (max-width: 800px) {
